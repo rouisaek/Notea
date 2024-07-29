@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notea.Api", "Notea.Api\Notea.Api.csproj", "{5E4CE0E1-6C6D-48DC-8F06-EC9BCDFC7676}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notea.Data", "Notea.Data\Notea.Data.csproj", "{C60EF398-45E6-4025-81B4-A4F9B3FF3AF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notea.Domain", "Notea.Domain\Notea.Domain.csproj", "{CF127381-571A-436E-B893-52562A43C908}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E4CE0E1-6C6D-48DC-8F06-EC9BCDFC7676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4CE0E1-6C6D-48DC-8F06-EC9BCDFC7676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4CE0E1-6C6D-48DC-8F06-EC9BCDFC7676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4CE0E1-6C6D-48DC-8F06-EC9BCDFC7676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C60EF398-45E6-4025-81B4-A4F9B3FF3AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C60EF398-45E6-4025-81B4-A4F9B3FF3AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C60EF398-45E6-4025-81B4-A4F9B3FF3AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C60EF398-45E6-4025-81B4-A4F9B3FF3AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF127381-571A-436E-B893-52562A43C908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF127381-571A-436E-B893-52562A43C908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF127381-571A-436E-B893-52562A43C908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF127381-571A-436E-B893-52562A43C908}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E227ED1D-4D03-4037-B41B-5AD2B0E73CD6}
+	EndGlobalSection
+EndGlobal
