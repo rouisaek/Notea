@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Notea.Domain.Users;
+using Notea.Domain.Models.Users;
 
 namespace Notea.Domain.Context;
 

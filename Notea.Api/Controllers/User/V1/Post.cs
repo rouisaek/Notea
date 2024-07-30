@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Notea.Domain.Users.Requests;
+using Notea.Domain.Users.Models.Requests;
 
 
 

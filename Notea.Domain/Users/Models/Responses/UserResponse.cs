@@ -1,4 +1,4 @@
-namespace Notea.Domain.Users.Responses;
+namespace Notea.Domain.Users.Models.Responses;
 
 public class UserResponse
 {

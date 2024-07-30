@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Notea.Domain.Users.Responses;
+using Notea.Domain.Users.Models.Responses;
 
 
 namespace Notea.Api.Controllers.User.V1;

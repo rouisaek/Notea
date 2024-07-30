@@ -1,4 +1,4 @@
-namespace Notea.Domain.Users.Requests;
+namespace Notea.Domain.Users.Models.Requests;
 
 // For filtering, searching, or specifying conditions.
 public class GetUserRequest
