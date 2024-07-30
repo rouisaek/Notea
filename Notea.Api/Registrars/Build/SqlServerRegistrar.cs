@@ -1,6 +1,6 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
-using Notea.Data.Context;
+using Notea.Domain.Context;
 
 namespace Notea.Api.Registrars.Build;
 

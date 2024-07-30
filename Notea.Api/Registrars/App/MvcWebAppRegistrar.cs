@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.HttpOverrides;
-using Notea.Data.Context;
+using Notea.Domain.Context;
 
 namespace Notea.Api.Registrars.App;
 
@@ -8,8 +8,6 @@ public class MvcWebAppRegistrar : IWebApplicationRegistrar
     public void RegisterPipelineComponents(WebApplication app)
     {
         app.UseStatusCodePages();
-
-        // app.UseMiddleware<GlobalErrorHandlingMiddleware>();
 
         if (app.Environment.IsDevelopment())
         {
@@ -23,19 +21,15 @@ public class MvcWebAppRegistrar : IWebApplicationRegistrar
             app.UseHsts();
         }
 
-        // Data seeding.
+
         using (var scope = app.Services.CreateScope())
         {
-            var serviceProvider = scope.ServiceProvider;
-
-            var context = serviceProvider.GetRequiredService<ApplicationDbContext>();
+            var services = scope.ServiceProvider;
+            var context = services.GetRequiredService<ApplicationDbContext>();
             context.Database.EnsureCreated();
-            SeedData.Initialize(context);
         }
 
         app.UseHttpsRedirection();
-
-        app.UseStaticFiles();
 
         app.UseForwardedHeaders(new ForwardedHeadersOptions
         {

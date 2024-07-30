@@ -43,8 +43,6 @@ public class MvcRegistrar : IWebApplicationBuilderRegistrar
 
         builder.Services.AddEndpointsApiExplorer();
 
-        // builder.Services.AddTransient<GlobalErrorHandlingMiddleware>();
-
         builder.Services.AddProblemDetails();
     }
 }

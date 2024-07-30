@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Notea.Domain.Dtos.User;
+using Notea.Domain.Users.Requests;
 
 
 namespace Notea.Api.Controllers.User.V1;
@@ -11,7 +11,7 @@ public sealed partial class UsersController
     /// Updates the details of an existing user.
     /// </summary>
     /// <param name="userId">The unique identifier of the user to update.</param>
-    /// <param name="updateUserDto">The data transfer object containing the updated details of the user.</param>
+    /// <param name="updateUser">The data transfer object containing the updated details of the user.</param>
     /// <returns>
     /// A <see cref="Task{IActionResult}"/> representing the asynchronous operation.
     /// Returns a 204 No Content status code if the user is successfully updated.
@@ -29,8 +29,8 @@ public sealed partial class UsersController
     [ProducesResponseType(400)]
     [ProducesResponseType(404)]
     [ProducesResponseType(500)]
-    public async Task<IActionResult> UpdateUserAsync(string userId, UpdateUserDto updateUserDto)
+    public async Task<IActionResult> Update(string userId, UpdateUserRequest updateUser)
     {
-        return Ok(await _userService.UpdateUserAsync(userId, updateUserDto));
+        return Ok(await _userService.UpdateUserAsync(userId, updateUser));
     }
 }

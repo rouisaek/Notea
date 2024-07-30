@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Notea.Domain.Dtos.User;
+using Notea.Domain.Users.Responses;
 
 namespace Notea.Api.Controllers.User.V1;
 
@@ -31,8 +31,8 @@ public sealed partial class UsersController
     /// This could be due to a database connection issue or an unexpected error in the server.
     /// </response>
     [HttpGet]
-    [ProducesResponseType(200, Type = typeof(IEnumerable<GetUserDto>))]
     [ProducesResponseType(500)]
-    public async Task<IActionResult> Get() =>
+    [ProducesResponseType(200, Type = typeof(IList<UserResponse>))]
+    public async Task<IActionResult> GetAll() =>
            Ok(await _userService.GetUsersAsync());
 }

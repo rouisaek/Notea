@@ -23,6 +23,6 @@ public sealed partial class UsersController
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
     [ProducesResponseType(500)]
-    public async Task DeleteUserAsync(string userId) =>
+    public async Task Delete(string userId) =>
        await _userService.DeleteUserAsync(userId);
 }

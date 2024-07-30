@@ -22,8 +22,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Notea.Domain\Notea.Domain.csproj" />
-	  <ProjectReference Include="..\Notea.Data\Notea.Data.csproj" />
+	  <ProjectReference Include="..\Notea.Domain\Notea.Domain.csproj" />	  
 	</ItemGroup>	
 
 </Project>

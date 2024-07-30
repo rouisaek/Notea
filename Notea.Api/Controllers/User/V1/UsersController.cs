@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Notea.Api.Routes;
-using Notea.Domain.Services;
+using Notea.Domain.Users;
 
 namespace Notea.Api.Controllers.User.V1;
 

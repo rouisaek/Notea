@@ -5,8 +5,6 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notea.Api", "Notea.Api\Notea.Api.csproj", "{5E4CE0E1-6C6D-48DC-8F06-EC9BCDFC7676}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notea.Data", "Notea.Data\Notea.Data.csproj", "{C60EF398-45E6-4025-81B4-A4F9B3FF3AF5}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notea.Domain", "Notea.Domain\Notea.Domain.csproj", "{CF127381-571A-436E-B893-52562A43C908}"
 EndProject
 Global

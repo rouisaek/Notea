@@ -38,7 +38,7 @@ public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
             License = new OpenApiLicense
             {
                 Name = "MIT License",
-                Url = new Uri("https://github.com/rouisaek/Notea/blob/master/LICENSE.txt")
+                Url = new Uri("https://github.com/rouisaek/Notea/blob/main/LICENSE.txt")
             }
         };
 

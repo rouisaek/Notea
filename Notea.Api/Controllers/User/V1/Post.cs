@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Notea.Domain.Dtos.User;
+using Notea.Domain.Users.Requests;
 
 
 
@@ -11,7 +11,7 @@ public sealed partial class UsersController
     /// <summary>
     /// Creates a new user with the provided details.
     /// </summary>
-    /// <param name="CreateUserDto">The data transfer object containing the details of the user to be created.</param>
+    /// <param name="createUser">The data transfer object containing the details of the user to be created.</param>
     /// <returns>
     /// A <see cref="Task{IActionResult}"/> representing the asynchronous operation.
     /// Returns a 201 Created status code if the user is successfully created.
@@ -27,9 +27,9 @@ public sealed partial class UsersController
     [ProducesResponseType(201)] // Created
     [ProducesResponseType(400)] // Bad Request
     [ProducesResponseType(500)] // Server Error
-    public async Task<IActionResult> Post(PostUserDto CreateUserDto)
+    public async Task<IActionResult> Post(CreateUserRequest createUser)
     {
-        await _userService.PostUserAsync(CreateUserDto);
+        await _userService.CreateUserAsync(createUser);
         return Created();
     }
 }

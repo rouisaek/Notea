@@ -1,5 +1,4 @@
-﻿using System.Reflection;
-using Notea.Api.Options;
+﻿using Notea.Api.Options;
 
 namespace Notea.Api.Registrars.Build;
 
