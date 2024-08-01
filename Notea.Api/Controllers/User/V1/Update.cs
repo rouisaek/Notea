@@ -31,6 +31,11 @@ public sealed partial class UsersController
     [ProducesResponseType(500)]
     public async Task<IActionResult> Update(string userId, UpdateUserRequest updateUser)
     {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest();
+        }
+
         return Ok(await _userService.UpdateUserAsync(userId, updateUser));
     }
 }

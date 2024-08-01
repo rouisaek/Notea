@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using Notea.Domain.Users.Models.Requests;
 
 
@@ -29,7 +30,13 @@ public sealed partial class UsersController
     [ProducesResponseType(500)] // Server Error
     public async Task<IActionResult> Post(CreateUserRequest createUser)
     {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest();
+        }
+
         await _userService.CreateUserAsync(createUser);
+
         return Created();
     }
 }

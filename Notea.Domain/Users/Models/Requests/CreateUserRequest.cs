@@ -1,7 +1,17 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Notea.Domain.Users.Models.Requests;
 
-public record CreateUserRequest(string UserName,
-                                string FirstName,
-                                string LastName,
-                                string Password,
-                                string Email);
+public class CreateUserRequest()
+{
+    [Required]
+    public string? UserName { get; set; }
+    [Required]
+    public string? FirstName { get; set; }
+    [Required]
+    public string? LastName { get; set; }
+    [Required]
+    public string? Password { get; set; }
+    [Required]
+    public string? Email { get; set; }
+}

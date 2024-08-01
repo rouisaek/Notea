@@ -1,5 +1,6 @@
 ﻿using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Notea.Domain.Context;
 using Notea.Domain.Models.Users;
 using Notea.Domain.Users.Models.Requests;
@@ -66,7 +67,6 @@ public class UserService
         }
     }
 
-
     public async Task<UserResponse> CreateUserAsync(CreateUserRequest newUser)
     {
         try
@@ -95,9 +95,6 @@ public class UserService
             return null;
         }
     }
-
-
-
 
     public async Task<UserResponse> UpdateUserAsync(string userId, UpdateUserRequest updateUser)
     {
@@ -200,7 +197,6 @@ public class UserService
         }
     }
 
-
     private async Task<User?> GetUser(string userId)
     {
         try
@@ -219,7 +215,6 @@ public class UserService
             return null;
         }
     }
-
 
     private string HashPassword(string password) => $"#$§{password}#$§";
 

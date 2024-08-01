@@ -58,7 +58,7 @@ cd notea`
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/rouisaek/Notea/blob/master/LICENSE.txt) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/rouisaek/Notea/blob/main/LICENSE.txt) file for details.
 
 ## Contact
 
