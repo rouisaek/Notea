@@ -7,6 +7,10 @@
     <UserSecretsId>75950c3d-b18f-485e-bc04-03d8f10f4e18</UserSecretsId>
   </PropertyGroup>	
 
+	<PropertyGroup>
+		<!-- <GenerateDocumentationFile>true</GenerateDocumentationFile> -->
+	</PropertyGroup>
+	
 	<ItemGroup>			
 		<PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />		

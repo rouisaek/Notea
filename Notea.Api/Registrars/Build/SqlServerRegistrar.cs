@@ -17,9 +17,9 @@ public class SqlServerRegistrar : IWebApplicationBuilderRegistrar
             services.AddDbContext<ApplicationDbContext>(options =>
                       options.UseSqlite(config.GetConnectionString("SQLite_Database")));
 
-        // services.AddDbContext<ApplicationDbContext>(options =>
-        //         options.UseSqlServer(config.GetConnectionString("DevelopmentConnection"),
-        //             b => b.MigrationsAssembly(Assembly.GetExecutingAssembly().GetName().Name)));
+        /*services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(config.GetConnectionString("DevelopmentConnection"),
+                    b => b.MigrationsAssembly(Assembly.GetExecutingAssembly().GetName().Name)));*/
 
         else services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(config.GetConnectionString("ProductionConnection"),

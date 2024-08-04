@@ -15,6 +15,7 @@ public class SwaggerWebAppRegistrar : IWebApplicationRegistrar
             {
                 options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json",
                     description.ApiVersion.ToString());
+
             }
         });
     }

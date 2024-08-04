@@ -36,6 +36,7 @@ public class MvcWebAppRegistrar : IWebApplicationRegistrar
             ForwardedHeaders = ForwardedHeaders.All
         });
 
+        app.UseAuthentication();
         app.UseAuthorization();
 
         app.MapControllers();
