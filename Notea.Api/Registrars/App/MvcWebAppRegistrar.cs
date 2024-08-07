@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.HttpOverrides;
 using Notea.Domain.Context;
+using Notea.Domain.Models.User;
 
 namespace Notea.Api.Registrars.App;
 
@@ -38,6 +39,8 @@ public class MvcWebAppRegistrar : IWebApplicationRegistrar
 
         app.UseAuthentication();
         app.UseAuthorization();
+
+        app.MapCustomizedIdentityApi<ApplicationUser>();
 
         app.MapControllers();
 

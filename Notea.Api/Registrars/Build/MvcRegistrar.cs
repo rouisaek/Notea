@@ -1,5 +1,4 @@
 ﻿using System.Text.Json;
-using System.Text.Json.Serialization;
 using Asp.Versioning;
 using Asp.Versioning.Conventions;
 
@@ -23,7 +22,6 @@ public class MvcRegistrar : IWebApplicationBuilderRegistrar
         builder.Services.AddControllers().AddJsonOptions(options =>
         {
             options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower;
-            options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
         });
 
         builder.Services.AddApiVersioning(options =>

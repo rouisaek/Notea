@@ -1,13 +1,12 @@
 ﻿using Notea.Api.Registrars;
 
-namespace CwkSocial.Api.Extensions;
+namespace Notea.Api.Extensions;
 
 public static class RegistrarExtensions
 {
     public static void RegisterServices(this WebApplicationBuilder builder, Type scanningType)
     {
         var registrars = GetRegistrars<IWebApplicationBuilderRegistrar>(scanningType);
-
         foreach (var registrar in registrars)
         {
             registrar.RegisterServices(builder);

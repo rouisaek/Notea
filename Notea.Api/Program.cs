@@ -1,20 +1,10 @@
-using CwkSocial.Api.Extensions;
-using Microsoft.AspNetCore.Identity;
-using Notea.Domain.Context;
-using Notea.Domain.Models.Users;
+using Notea.Api.Extensions;
 
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddAuthentication();
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.RegisterServices(typeof(Program));
 
-builder.Services.AddIdentityApiEndpoints<User>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
-
-var app = builder.Build();
-
-app.MapIdentityApi<User>();
+WebApplication app = builder.Build();
 
 app.RegisterPipelineComponents(typeof(Program));
 

@@ -9,9 +9,9 @@ public class SqlServerRegistrar : IWebApplicationBuilderRegistrar
 
     public void RegisterServices(WebApplicationBuilder builder)
     {
-        var env = builder.Environment;
-        var config = builder.Configuration;
-        var services = builder.Services;
+        IWebHostEnvironment env = builder.Environment;
+        ConfigurationManager config = builder.Configuration;
+        IServiceCollection services = builder.Services;
 
         if (env.IsDevelopment())
             services.AddDbContext<ApplicationDbContext>(options =>

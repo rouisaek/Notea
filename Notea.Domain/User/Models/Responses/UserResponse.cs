@@ -1,4 +1,4 @@
-namespace Notea.Domain.Users.Models.Responses;
+namespace Notea.Domain.User.Models.Responses;
 
 public class UserResponse
 {
@@ -8,6 +8,6 @@ public class UserResponse
     public string? FirstName { get; set; }
     public string? LastName { get; set; }
     public string? FullName { get; set; }
-    public string? CreatedAt { get; set; }
-    public string? LastLogin { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public DateTime LastLogin { get; set; }
 }

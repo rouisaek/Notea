@@ -365,3 +365,5 @@ FodyWeavers.xsd
 
 # SQLite Database
 /Notea.Api/Database.db*
+
+/Dump

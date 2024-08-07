@@ -1,3 +1,6 @@
 ﻿namespace Notea.Api.Registrars;
 
-public interface IRegistrar { }
+public interface IRegistrar
+{
+
+}

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Notea.Api.Routes;
-using Notea.Domain.Users;
+using Notea.Domain.User;
 
 namespace Notea.Api.Controllers.User.V1;
 

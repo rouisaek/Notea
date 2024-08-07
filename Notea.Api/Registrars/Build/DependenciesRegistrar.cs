@@ -1,4 +1,4 @@
-using Notea.Domain.Users;
+using Notea.Domain.User;
 
 namespace Notea.Api.Registrars.Build;
 
